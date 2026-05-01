@@ -145,16 +145,16 @@ cd ../server
 NODE_ENV=production node server.js
 ```
 
-## Deployment (Railway)
+## Deployment (Render)
 
 1. Push code to GitHub
-2. Create a new project on [Railway](https://railway.app)
-3. Connect your GitHub repository
-4. Set environment variables:
+2. Go to [Render](https://dashboard.render.com/blueprints)
+3. Click "New Blueprint Instance"
+4. Connect your GitHub repository `AyushG999/TaskForge`
+5. Set environment variables when prompted:
    - `MONGODB_URI` - Your MongoDB Atlas connection string
    - `JWT_SECRET` - A random secret string
-   - `NODE_ENV` - `production`
-5. Railway will auto-detect the `railway.json` config and deploy
+6. Render will auto-detect the `render.yaml` config and deploy the application.
 
 ## Role-Based Access Control
 
