@@ -1,0 +1,12 @@
+{
+  "name": "taskforge",
+  "version": "1.0.0",
+  "description": "TaskForge - Team Task Manager",
+  "scripts": {
+    "start": "cd server && node server.js",
+    "build": "cd client && npm install && npm run build",
+    "dev:server": "cd server && node server.js",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  }
+}
