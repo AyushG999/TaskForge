@@ -1,10 +1,17 @@
-﻿# TaskForge - Team Task Manager
+# TaskForge - Team Task Manager
 
 A full-stack web application for team task management with role-based access control, project management, and real-time dashboard analytics.
+
+## Submission Links
+
+- **GitHub Repository**: https://github.com/AyushG999/TaskForge
+- **Live URL (Railway)**: [Please insert Railway URL here after deployment]
+- **Demo Video**: [Please insert Demo Video link here]
 
 ## Features
 
 - **User Authentication** - Signup/Login with JWT-based secure authentication
+- **Password Recovery** - 2-step forgot password & reset flow with stateless security tokens
 - **Project Management** - Create projects, add/remove team members
 - **Task Management** - Create, assign, and track tasks with priorities and due dates
 - **Role-Based Access** - Admin (full control) and Member (view & update assigned tasks)
@@ -12,6 +19,7 @@ A full-stack web application for team task management with role-based access con
 - **Task Board** - Visual column-based board (To Do, In Progress, Done)
 
 ## Tech Stack
+
 
 | Layer | Technology |
 |-------|-----------|
