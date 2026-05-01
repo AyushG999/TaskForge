@@ -20,7 +20,7 @@ A full-stack web application for team task management with role-based access con
 | Backend | Node.js + Express |
 | Database | MongoDB Atlas |
 | Auth | JWT + bcryptjs |
-| Deployment | Railway |
+| Deployment | Vercel |
 
 ## Project Structure
 
@@ -44,7 +44,7 @@ A full-stack web application for team task management with role-based access con
 │   ├── server.js
 │   └── package.json
 │
-├── railway.json            # Railway deployment config
+├── vercel.json             # Vercel deployment config
 └── README.md
 ```
 
@@ -137,16 +137,17 @@ cd ../server
 NODE_ENV=production node server.js
 ```
 
-## Deployment (Render)
+## Deployment (Vercel)
 
 1. Push code to GitHub
-2. Go to [Render](https://dashboard.render.com/blueprints)
-3. Click "New Blueprint Instance"
-4. Connect your GitHub repository `AyushG999/TaskForge`
-5. Set environment variables when prompted:
+2. Go to your [Vercel Dashboard](https://vercel.com/dashboard)
+3. Click "Add New" -> "Project"
+4. Import your GitHub repository `AyushG999/TaskForge`
+5. Vercel will auto-detect the `vercel.json` config.
+6. Add the following Environment Variables in the project settings:
    - `MONGODB_URI` - Your MongoDB Atlas connection string
    - `JWT_SECRET` - A random secret string
-6. Render will auto-detect the `render.yaml` config and deploy the application.
+7. Click "Deploy" and Vercel will build and deploy the application.
 
 ## Role-Based Access Control
 
